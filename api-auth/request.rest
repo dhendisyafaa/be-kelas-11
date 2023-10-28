@@ -1,0 +1,22 @@
+GET http://localhost:5000/api/v1/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJSZXkiLCJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTY5ODQ4MTEyNCwiZXhwIjoxNjk4NDgxNDI0fQ.7TZ_LX9lLVZ-bTLStS2_wXk8RHxYiBkjVLPlu_et45Y
+
+###
+POST http://localhost:5000/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "name": "Rey",
+    "email": "email@gmail.com",
+    "pass": "12345678",
+    "confPass": "12345678"
+}
+
+###
+POST http://localhost:5000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "email@gmail.com",
+    "pass": "12345678"
+}
